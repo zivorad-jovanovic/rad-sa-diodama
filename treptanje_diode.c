@@ -1,8 +1,11 @@
+// nova verzija koda
+
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #define POD_A
 unsigned char slika_led = 0xFF;
 unsigned char t0_cnt = 0;
+int a = 0;
 ISR(TIMER0_COMPA_vect)
 {
  //prekid tajmera 0 usled dostizanja vrednosti registra OCR0A
